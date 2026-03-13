@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assests/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./Styles/style.css">
+  <script src="./Logic/logic.js" defer></script>
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="card" id="cardId" onmousemove="OnMouseMove(event)" onmouseleave="OnMouseOut()">
+      
+      <div class="qr-img">
+        <img src="./assests/images/image-qr-code.png" alt="QR Code that Leads to Front-End Mentor">
+      </div>
+
+      <div class="img-info">
+        <h1 class="img-heading">
+          Improve Your Front-End Skills By Building Projects
+        </h1>
+        <p class="img-text">
+          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

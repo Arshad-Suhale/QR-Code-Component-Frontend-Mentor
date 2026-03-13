@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("../assests/Fonts/Outfit/Outfit-VariableFont_wght.ttf") format("TrueType");
+}
+
+:root{
+
+    /* Colors */
+    --stale-900: #1F314F;
+    --stale-500: #68778D;
+    --state-300: #D5E1EF;
+    --blue-600: #2C7DFA;
+    --blue-500: #3685FF;
+
+    /* Spacing */
+    --gap-500: 40px;
+    --gap-300: 24px;
+    --gap-200: 16px;
+
+    /* Font Size */
+    --text-preset-1: 22px;
+    --text-preset-2: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    text-transform: none;
+    font-family: 'Outfit', sans-serif;
+
+    background-color: var(--state-300);
+}
+.container{
+    padding: 28px;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    max-height: 500px;
+    padding: 16px 16px 40px 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap-300);
+
+    border-radius: 20px;
+
+    background-color: white;
+    transition: transform 0.1s;
+}
+
+.qr-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.qr-img img{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.img-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap-200);
+
+    padding: 0 16px;
+}
+
+.img-heading{
+    color: var(--stale-900);
+    font-size: var(--text-preset-1);
+    font-weight: 700;
+}
+.img-text{
+    color: var(--stale-500);
+    font-size: var(--text-preset-2);
+    font-weight: 400;
+    line-height: 1.5;
+}
